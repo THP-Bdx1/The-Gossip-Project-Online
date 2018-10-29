@@ -1,0 +1,6 @@
+<h1>Salut <%= params["name"] %>, tu vas bien ?</h1>
+<% c=1 %>
+<% @index.each do |potin| %>
+    <p><a href="/potin/<%=c%>"> <%=c%></a> - <%= potin["content"] %> d'apres <%= potin["author"] %></p>
+    <%c+=1%>
+<% end %>
