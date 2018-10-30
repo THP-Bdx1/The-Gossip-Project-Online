@@ -1,4 +1,5 @@
 <h1>Salut <%= params["name"] %>, tu vas bien ?</h1>
+<h2>Voici notre super liste de potins mec ! Si tu voir un potin en particulier clique sur son numero. Mate moi ca :</h2>
 <% c=1 %>
 <% @index.each do |potin| %>
     <p><a href="/potin/<%=c%>"> <%=c%></a> - <%= potin["content"] %> d'apres <%= potin["author"] %></p>
