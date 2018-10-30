@@ -1,24 +1,18 @@
-# README
+# APPLICATION GOSSIP PROJECT
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### ATTENTION
 
-Things you may want to cover:
+L'atelier html/css a rendu ce site [dégueulasse](https://clips.twitch.tv/CovertComfortableGullWTRuck), on vous prévient.
 
-* Ruby version
+## Informations
 
-* System dependencies
+Projet réalisé en collaboration avec :
+* Valérian Michelot
+* Paul Guérin
+* David Rangeard
+* François Flous
+* William Horel
 
-* Configuration
+## Lien vers le site en production
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Vous pouvez retrouver le site en cliquant [ici](https://gossip-project-ses-morts.herokuapp.com/)
