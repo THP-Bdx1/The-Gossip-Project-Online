@@ -1,7 +1,24 @@
-<h1>Salut <%= params["name"] %>, tu vas bien ?</h1>
-<h2>Voici notre super liste de potins mec ! Si tu voir un potin en particulier clique sur son numero. Mate moi ca :</h2>
+<html>
+    <body class="goldie">
+<%parrot_array = ["https://cultofthepartyparrot.com/parrots/hamburgerparrot.gif", 
+"https://cultofthepartyparrot.com/parrots/parrotcop.gif", 
+"https://cultofthepartyparrot.com/parrots/confusedparrot.gif", 
+"https://cultofthepartyparrot.com/parrots/sovjetparrot.gif", 
+"https://cultofthepartyparrot.com/parrots/luckyparrot.gif", 
+"https://cultofthepartyparrot.com/parrots/tripletsparrot.gif",
+"https://cultofthepartyparrot.com/parrots/parrotbeer.gif", 
+"https://cultofthepartyparrot.com/parrots/hd/revolutionparrot.gif",
+"https://cultofthepartyparrot.com/parrots/hd/christmasparrot.gif",
+"https://cultofthepartyparrot.com/parrots/harrypotterparrot.gif"]%>
+<div class="gossipsbro">
+<h1>Salut <%= params["name"] %>, tu vas bien ? <img src="https://cultofthepartyparrot.com/parrots/hd/flyingmoneyparrot.gif" alt="partyparrot" height="70"></h1>
+<h2>Voici notre super liste de potins mec ! Si tu voir un potin en particulier clique sur son numero. Mate moi ça :</h2>
+<br>
 <% c=1 %>
 <% @index.each do |potin| %>
-    <p><a href="/potin/<%=c%>"> <%=c%></a> - <%= potin["content"] %> d'apres <%= potin["author"] %></p>
+    <p class="gossipsbro"><a href="/potin/<%=c%>"> <%=c%></a> - <img src=<%=parrot_array[c-1]%> alt="partyparrot" height="30"> - <%= potin["content"] %> d'apres <%= potin["author"] %></p>
     <%c+=1%>
+</div>
 <% end %>
+</body>
+</html>
